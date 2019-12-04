@@ -9,23 +9,93 @@
 /* Begin PBXBuildFile section */
 		4CD68EDC238FDCF1009053FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EDB238FDCF1009053FA /* AppDelegate.swift */; };
 		4CD68EDE238FDCF1009053FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EDD238FDCF1009053FA /* SceneDelegate.swift */; };
-		4CD68EE0238FDCF1009053FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EDF238FDCF1009053FA /* ViewController.swift */; };
-		4CD68EE3238FDCF1009053FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD68EE1238FDCF1009053FA /* Main.storyboard */; };
 		4CD68EE6238FDCF1009053FA /* SteamChallengeFC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EE4238FDCF1009053FA /* SteamChallengeFC.xcdatamodeld */; };
 		4CD68EE8238FDCF2009053FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD68EE7238FDCF2009053FA /* Assets.xcassets */; };
 		4CD68EEB238FDCF2009053FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD68EE9238FDCF2009053FA /* LaunchScreen.storyboard */; };
+		4CD68EF42396557B009053FA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EF32396557B009053FA /* BaseCoordinator.swift */; };
+		4CD68EF7239655BD009053FA /* CoordinatorsFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EF6239655BD009053FA /* CoordinatorsFabric.swift */; };
+		4CD68EFA2396563B009053FA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EF92396563B009053FA /* UIViewController+Extension.swift */; };
+		4CD68EFC239656DA009053FA /* ControllersFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68EFB239656DA009053FA /* ControllersFabric.swift */; };
+		4CD68F0123965789009053FA /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F0023965789009053FA /* TabBarCoordinator.swift */; };
+		4CD68F0D2396802B009053FA /* SteamLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F042396802B009053FA /* SteamLoginVC.swift */; };
+		4CD68F0E2396802B009053FA /* SteamLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F052396802B009053FA /* SteamLogin.swift */; };
+		4CD68F0F2396802B009053FA /* SteamUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F072396802B009053FA /* SteamUser.swift */; };
+		4CD68F102396802B009053FA /* SteamVanityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F092396802B009053FA /* SteamVanityResponse.swift */; };
+		4CD68F112396802B009053FA /* SteamVanity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F0A2396802B009053FA /* SteamVanity.swift */; };
+		4CD68F122396802B009053FA /* String+SteamId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F0C2396802B009053FA /* String+SteamId.swift */; };
+		4CD68F19239681B0009053FA /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F18239681B0009053FA /* AppStyle.swift */; };
+		4CD68F1E239682C9009053FA /* UserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F1D239682C9009053FA /* UserProfilePresenter.swift */; };
+		4CD68F222396833B009053FA /* LastPlayedSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F202396833B009053FA /* LastPlayedSessionsViewController.swift */; };
+		4CD68F232396833B009053FA /* LastPlayedSessionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD68F212396833B009053FA /* LastPlayedSessionsViewController.xib */; };
+		4CD68F2D23968406009053FA /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F2B23968406009053FA /* UserProfileViewController.swift */; };
+		4CD68F2E23968406009053FA /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD68F2C23968406009053FA /* UserProfileViewController.xib */; };
+		4CD68F3123968448009053FA /* LastPlayedSessionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F3023968448009053FA /* LastPlayedSessionsPresenter.swift */; };
+		4CD68F33239684E5009053FA /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F32239684E5009053FA /* UITableView+Extension.swift */; };
+		4CD68F35239685A0009053FA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F34239685A0009053FA /* MainTabBarController.swift */; };
+		4CD68F3723968648009053FA /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F3623968648009053FA /* UIImage+Extension.swift */; };
+		4CD68F3A239686FA009053FA /* TabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F39239686FA009053FA /* TabBarBuilder.swift */; };
+		4CD68F3D23968DBE009053FA /* UserProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F3C23968DBE009053FA /* UserProfileCoordinator.swift */; };
+		4CD68F4023968E5C009053FA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F3F23968E5C009053FA /* AppRouter.swift */; };
+		4CD68F51239690B1009053FA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F43239690B1009053FA /* ParameterEncoding.swift */; };
+		4CD68F52239690B1009053FA /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F44239690B1009053FA /* URLParameterEncoding.swift */; };
+		4CD68F53239690B1009053FA /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F45239690B1009053FA /* JSONParameterEncoder.swift */; };
+		4CD68F54239690B1009053FA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F47239690B1009053FA /* NetworkManager.swift */; };
+		4CD68F55239690B1009053FA /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F49239690B1009053FA /* MovieEndPoint.swift */; };
+		4CD68F57239690B1009053FA /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F4C239690B1009053FA /* HTTPTask.swift */; };
+		4CD68F58239690B1009053FA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F4D239690B1009053FA /* HTTPMethod.swift */; };
+		4CD68F59239690B1009053FA /* NetworkingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F4E239690B1009053FA /* NetworkingRouter.swift */; };
+		4CD68F5A239690B1009053FA /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F4F239690B1009053FA /* NetworkLogger.swift */; };
+		4CD68F5B239690B1009053FA /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F50239690B1009053FA /* EndPointType.swift */; };
+		4CD68F5E2396A3A7009053FA /* LastPlayedSessionsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F5D2396A3A7009053FA /* LastPlayedSessionsCoordinator.swift */; };
+		4CD68F612396AD51009053FA /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F602396AD51009053FA /* LaunchInstructor.swift */; };
+		4CD68F632396AD99009053FA /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD68F622396AD99009053FA /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CD68ED8238FDCF1009053FA /* SteamChallengeFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamChallengeFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD68EDB238FDCF1009053FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD68EDD238FDCF1009053FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CD68EDF238FDCF1009053FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4CD68EE2238FDCF1009053FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CD68EE5238FDCF1009053FA /* SteamChallengeFC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SteamChallengeFC.xcdatamodel; sourceTree = "<group>"; };
 		4CD68EE7238FDCF2009053FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD68EEA238FDCF2009053FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CD68EEC238FDCF2009053FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD68EF32396557B009053FA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		4CD68EF6239655BD009053FA /* CoordinatorsFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsFabric.swift; sourceTree = "<group>"; };
+		4CD68EF92396563B009053FA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4CD68EFB239656DA009053FA /* ControllersFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersFabric.swift; sourceTree = "<group>"; };
+		4CD68F0023965789009053FA /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		4CD68F042396802B009053FA /* SteamLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamLoginVC.swift; sourceTree = "<group>"; };
+		4CD68F052396802B009053FA /* SteamLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamLogin.swift; sourceTree = "<group>"; };
+		4CD68F072396802B009053FA /* SteamUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamUser.swift; sourceTree = "<group>"; };
+		4CD68F092396802B009053FA /* SteamVanityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamVanityResponse.swift; sourceTree = "<group>"; };
+		4CD68F0A2396802B009053FA /* SteamVanity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteamVanity.swift; sourceTree = "<group>"; };
+		4CD68F0C2396802B009053FA /* String+SteamId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SteamId.swift"; sourceTree = "<group>"; };
+		4CD68F18239681B0009053FA /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		4CD68F1D239682C9009053FA /* UserProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePresenter.swift; sourceTree = "<group>"; };
+		4CD68F202396833B009053FA /* LastPlayedSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPlayedSessionsViewController.swift; sourceTree = "<group>"; };
+		4CD68F212396833B009053FA /* LastPlayedSessionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastPlayedSessionsViewController.xib; sourceTree = "<group>"; };
+		4CD68F2B23968406009053FA /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		4CD68F2C23968406009053FA /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		4CD68F3023968448009053FA /* LastPlayedSessionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPlayedSessionsPresenter.swift; sourceTree = "<group>"; };
+		4CD68F32239684E5009053FA /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		4CD68F34239685A0009053FA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4CD68F3623968648009053FA /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		4CD68F39239686FA009053FA /* TabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBuilder.swift; sourceTree = "<group>"; };
+		4CD68F3C23968DBE009053FA /* UserProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCoordinator.swift; sourceTree = "<group>"; };
+		4CD68F3F23968E5C009053FA /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		4CD68F43239690B1009053FA /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		4CD68F44239690B1009053FA /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		4CD68F45239690B1009053FA /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		4CD68F47239690B1009053FA /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4CD68F49239690B1009053FA /* MovieEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
+		4CD68F4C239690B1009053FA /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		4CD68F4D239690B1009053FA /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4CD68F4E239690B1009053FA /* NetworkingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingRouter.swift; sourceTree = "<group>"; };
+		4CD68F4F239690B1009053FA /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		4CD68F50239690B1009053FA /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		4CD68F5D2396A3A7009053FA /* LastPlayedSessionsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPlayedSessionsCoordinator.swift; sourceTree = "<group>"; };
+		4CD68F602396AD51009053FA /* LaunchInstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
+		4CD68F622396AD99009053FA /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +130,329 @@
 			children = (
 				4CD68EDB238FDCF1009053FA /* AppDelegate.swift */,
 				4CD68EDD238FDCF1009053FA /* SceneDelegate.swift */,
-				4CD68EDF238FDCF1009053FA /* ViewController.swift */,
-				4CD68EE1238FDCF1009053FA /* Main.storyboard */,
+				4CD68EEC238FDCF2009053FA /* Info.plist */,
+				4CD68F3E23968E4E009053FA /* General */,
+				4CD68F5F2396AD3A009053FA /* ApplicationCoordinator */,
+				4CD68F1B23968297009053FA /* Modules */,
+				4CD68F1A239681D6009053FA /* Common */,
+				4CD68F17239681A1009053FA /* Constants */,
+				4CD68F1623968166009053FA /* Services */,
+				4CD68EFF23965767009053FA /* TabBarConfiguration */,
+				4CD68EF223965562009053FA /* Base */,
 				4CD68EE7238FDCF2009053FA /* Assets.xcassets */,
 				4CD68EE9238FDCF2009053FA /* LaunchScreen.storyboard */,
-				4CD68EEC238FDCF2009053FA /* Info.plist */,
-				4CD68EE4238FDCF1009053FA /* SteamChallengeFC.xcdatamodeld */,
 			);
 			path = SteamChallengeFC;
+			sourceTree = "<group>";
+		};
+		4CD68EF223965562009053FA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68EF32396557B009053FA /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4CD68EF5239655A3009053FA /* Fabrics */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68EF6239655BD009053FA /* CoordinatorsFabric.swift */,
+				4CD68EFB239656DA009053FA /* ControllersFabric.swift */,
+			);
+			path = Fabrics;
+			sourceTree = "<group>";
+		};
+		4CD68EF823965619009053FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68EF92396563B009053FA /* UIViewController+Extension.swift */,
+				4CD68F32239684E5009053FA /* UITableView+Extension.swift */,
+				4CD68F3623968648009053FA /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4CD68EFF23965767009053FA /* TabBarConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F38239686E9009053FA /* TabBarBuilder */,
+				4CD68F0023965789009053FA /* TabBarCoordinator.swift */,
+				4CD68F34239685A0009053FA /* MainTabBarController.swift */,
+			);
+			path = TabBarConfiguration;
+			sourceTree = "<group>";
+		};
+		4CD68F022396802B009053FA /* SteamAuthorizer */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F052396802B009053FA /* SteamLogin.swift */,
+				4CD68F032396802B009053FA /* SteamLoginVC */,
+				4CD68F062396802B009053FA /* SteamUser */,
+				4CD68F082396802B009053FA /* SteamVanityResponse */,
+				4CD68F0B2396802B009053FA /* Categories */,
+			);
+			path = SteamAuthorizer;
+			sourceTree = "<group>";
+		};
+		4CD68F032396802B009053FA /* SteamLoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F042396802B009053FA /* SteamLoginVC.swift */,
+			);
+			path = SteamLoginVC;
+			sourceTree = "<group>";
+		};
+		4CD68F062396802B009053FA /* SteamUser */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F072396802B009053FA /* SteamUser.swift */,
+			);
+			path = SteamUser;
+			sourceTree = "<group>";
+		};
+		4CD68F082396802B009053FA /* SteamVanityResponse */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F092396802B009053FA /* SteamVanityResponse.swift */,
+				4CD68F0A2396802B009053FA /* SteamVanity.swift */,
+			);
+			path = SteamVanityResponse;
+			sourceTree = "<group>";
+		};
+		4CD68F0B2396802B009053FA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F0C2396802B009053FA /* String+SteamId.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4CD68F1323968091009053FA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68EE4238FDCF1009053FA /* SteamChallengeFC.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4CD68F152396813D009053FA /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F1323968091009053FA /* CoreData */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		4CD68F1623968166009053FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F41239690B1009053FA /* Networking */,
+				4CD68F022396802B009053FA /* SteamAuthorizer */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4CD68F17239681A1009053FA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F18239681B0009053FA /* AppStyle.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4CD68F1A239681D6009053FA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F152396813D009053FA /* LocalData */,
+				4CD68EF5239655A3009053FA /* Fabrics */,
+				4CD68EF823965619009053FA /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4CD68F1B23968297009053FA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F1F2396830A009053FA /* LastPlayedSessionsModule */,
+				4CD68F1C2396829F009053FA /* UserProfileModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4CD68F1C2396829F009053FA /* UserProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F3B23968DA7009053FA /* UserProfileCoordinator */,
+				4CD68F262396837B009053FA /* Views */,
+				4CD68F252396836A009053FA /* UserProfilePresenter */,
+			);
+			path = UserProfileModule;
+			sourceTree = "<group>";
+		};
+		4CD68F1F2396830A009053FA /* LastPlayedSessionsModule */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F5C2396A395009053FA /* LastPlayedSessionsCoordinator */,
+				4CD68F2F2396842E009053FA /* LastPlayedSessionsPresenter */,
+				4CD68F28239683A4009053FA /* Views */,
+			);
+			path = LastPlayedSessionsModule;
+			sourceTree = "<group>";
+		};
+		4CD68F2423968350009053FA /* UserProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F2B23968406009053FA /* UserProfileViewController.swift */,
+				4CD68F2C23968406009053FA /* UserProfileViewController.xib */,
+			);
+			path = UserProfileViewController;
+			sourceTree = "<group>";
+		};
+		4CD68F252396836A009053FA /* UserProfilePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F1D239682C9009053FA /* UserProfilePresenter.swift */,
+			);
+			path = UserProfilePresenter;
+			sourceTree = "<group>";
+		};
+		4CD68F262396837B009053FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F2723968387009053FA /* Cells */,
+				4CD68F2423968350009053FA /* UserProfileViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CD68F2723968387009053FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4CD68F28239683A4009053FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F29239683C2009053FA /* Cells */,
+				4CD68F2A239683CD009053FA /* LastPlayedSessionsViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CD68F29239683C2009053FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4CD68F2A239683CD009053FA /* LastPlayedSessionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F202396833B009053FA /* LastPlayedSessionsViewController.swift */,
+				4CD68F212396833B009053FA /* LastPlayedSessionsViewController.xib */,
+			);
+			path = LastPlayedSessionsViewController;
+			sourceTree = "<group>";
+		};
+		4CD68F2F2396842E009053FA /* LastPlayedSessionsPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F3023968448009053FA /* LastPlayedSessionsPresenter.swift */,
+			);
+			path = LastPlayedSessionsPresenter;
+			sourceTree = "<group>";
+		};
+		4CD68F38239686E9009053FA /* TabBarBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F39239686FA009053FA /* TabBarBuilder.swift */,
+			);
+			path = TabBarBuilder;
+			sourceTree = "<group>";
+		};
+		4CD68F3B23968DA7009053FA /* UserProfileCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F3C23968DBE009053FA /* UserProfileCoordinator.swift */,
+			);
+			path = UserProfileCoordinator;
+			sourceTree = "<group>";
+		};
+		4CD68F3E23968E4E009053FA /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F3F23968E5C009053FA /* AppRouter.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		4CD68F41239690B1009053FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F42239690B1009053FA /* Encoding */,
+				4CD68F46239690B1009053FA /* Manager */,
+				4CD68F48239690B1009053FA /* EndPoint */,
+				4CD68F4A239690B1009053FA /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4CD68F42239690B1009053FA /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F43239690B1009053FA /* ParameterEncoding.swift */,
+				4CD68F44239690B1009053FA /* URLParameterEncoding.swift */,
+				4CD68F45239690B1009053FA /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		4CD68F46239690B1009053FA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F47239690B1009053FA /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4CD68F48239690B1009053FA /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F49239690B1009053FA /* MovieEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		4CD68F4A239690B1009053FA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F4C239690B1009053FA /* HTTPTask.swift */,
+				4CD68F4D239690B1009053FA /* HTTPMethod.swift */,
+				4CD68F4E239690B1009053FA /* NetworkingRouter.swift */,
+				4CD68F4F239690B1009053FA /* NetworkLogger.swift */,
+				4CD68F50239690B1009053FA /* EndPointType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4CD68F5C2396A395009053FA /* LastPlayedSessionsCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F5D2396A3A7009053FA /* LastPlayedSessionsCoordinator.swift */,
+			);
+			path = LastPlayedSessionsCoordinator;
+			sourceTree = "<group>";
+		};
+		4CD68F5F2396AD3A009053FA /* ApplicationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4CD68F602396AD51009053FA /* LaunchInstructor.swift */,
+				4CD68F622396AD99009053FA /* ApplicationCoordinator.swift */,
+			);
+			path = ApplicationCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +513,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD68F232396833B009053FA /* LastPlayedSessionsViewController.xib in Resources */,
+				4CD68F2E23968406009053FA /* UserProfileViewController.xib in Resources */,
 				4CD68EEB238FDCF2009053FA /* LaunchScreen.storyboard in Resources */,
 				4CD68EE8238FDCF2009053FA /* Assets.xcassets in Resources */,
-				4CD68EE3238FDCF1009053FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +527,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD68EE0238FDCF1009053FA /* ViewController.swift in Sources */,
+				4CD68F5A239690B1009053FA /* NetworkLogger.swift in Sources */,
+				4CD68F222396833B009053FA /* LastPlayedSessionsViewController.swift in Sources */,
+				4CD68EFC239656DA009053FA /* ControllersFabric.swift in Sources */,
+				4CD68F4023968E5C009053FA /* AppRouter.swift in Sources */,
+				4CD68F5E2396A3A7009053FA /* LastPlayedSessionsCoordinator.swift in Sources */,
+				4CD68EF42396557B009053FA /* BaseCoordinator.swift in Sources */,
+				4CD68F3D23968DBE009053FA /* UserProfileCoordinator.swift in Sources */,
+				4CD68F3123968448009053FA /* LastPlayedSessionsPresenter.swift in Sources */,
+				4CD68F102396802B009053FA /* SteamVanityResponse.swift in Sources */,
+				4CD68F122396802B009053FA /* String+SteamId.swift in Sources */,
+				4CD68F112396802B009053FA /* SteamVanity.swift in Sources */,
+				4CD68F59239690B1009053FA /* NetworkingRouter.swift in Sources */,
+				4CD68F33239684E5009053FA /* UITableView+Extension.swift in Sources */,
+				4CD68F612396AD51009053FA /* LaunchInstructor.swift in Sources */,
+				4CD68F0F2396802B009053FA /* SteamUser.swift in Sources */,
+				4CD68F632396AD99009053FA /* ApplicationCoordinator.swift in Sources */,
+				4CD68F3723968648009053FA /* UIImage+Extension.swift in Sources */,
+				4CD68F53239690B1009053FA /* JSONParameterEncoder.swift in Sources */,
+				4CD68F58239690B1009053FA /* HTTPMethod.swift in Sources */,
+				4CD68F2D23968406009053FA /* UserProfileViewController.swift in Sources */,
+				4CD68F54239690B1009053FA /* NetworkManager.swift in Sources */,
+				4CD68F0D2396802B009053FA /* SteamLoginVC.swift in Sources */,
+				4CD68F5B239690B1009053FA /* EndPointType.swift in Sources */,
 				4CD68EDC238FDCF1009053FA /* AppDelegate.swift in Sources */,
 				4CD68EDE238FDCF1009053FA /* SceneDelegate.swift in Sources */,
+				4CD68F52239690B1009053FA /* URLParameterEncoding.swift in Sources */,
+				4CD68F0123965789009053FA /* TabBarCoordinator.swift in Sources */,
+				4CD68F3A239686FA009053FA /* TabBarBuilder.swift in Sources */,
+				4CD68F19239681B0009053FA /* AppStyle.swift in Sources */,
+				4CD68F0E2396802B009053FA /* SteamLogin.swift in Sources */,
+				4CD68F51239690B1009053FA /* ParameterEncoding.swift in Sources */,
+				4CD68F1E239682C9009053FA /* UserProfilePresenter.swift in Sources */,
+				4CD68F35239685A0009053FA /* MainTabBarController.swift in Sources */,
+				4CD68EFA2396563B009053FA /* UIViewController+Extension.swift in Sources */,
+				4CD68F57239690B1009053FA /* HTTPTask.swift in Sources */,
 				4CD68EE6238FDCF1009053FA /* SteamChallengeFC.xcdatamodeld in Sources */,
+				4CD68EF7239655BD009053FA /* CoordinatorsFabric.swift in Sources */,
+				4CD68F55239690B1009053FA /* MovieEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4CD68EE1238FDCF1009053FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CD68EE2238FDCF1009053FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4CD68EE9238FDCF2009053FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +686,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -298,7 +710,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chebahatt.com.SteamChallengeFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chebahatt.com.SteamChallengeFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
